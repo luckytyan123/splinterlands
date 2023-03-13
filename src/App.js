@@ -1,24 +1,36 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home';
+import { ApplicationProvider } from './ApplicationContext';
+import Tournaments from './components/Tournaments';
+import { ThemeProvider } from 'react-bootstrap';
+import HeaderComponent from './components/header/HeaderComponent';
+import Profile from './components/Profile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider
+      breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+      minBreakpoint="xxs"
+    >
+      <div className="App">
+        <HeaderComponent />
+        <ApplicationProvider>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />}>
+                <Route index element={<Home />} />
+              </Route>
+
+              <Route path="/tournaments" element={<Tournaments />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/profile/:id" element={<Profile />} />
+            </Routes>
+          </BrowserRouter>
+        </ApplicationProvider>
+      </div>
+    </ThemeProvider>
   );
 }
 

@@ -1,0 +1,13 @@
+.header-container{
+    background-color: #001a26;
+    height: 70px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+.header-container .logo-container{
+    height: 70px;
+    text-align: left;
+}
+.header-container .logo-container img{
+    height: 100%;
+}
