@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/splinterlands/static/css/main.073c9b0a.css",
-    "main.js": "/splinterlands/static/js/main.0b317bfb.js",
+    "main.css": "/splinterlands/static/css/main.6ea74cc3.css",
+    "main.js": "/splinterlands/static/js/main.5b6989d8.js",
     "static/js/787.de0e362b.chunk.js": "/splinterlands/static/js/787.de0e362b.chunk.js",
     "static/media/logo.svg": "/splinterlands/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/splinterlands/index.html",
-    "main.073c9b0a.css.map": "/splinterlands/static/css/main.073c9b0a.css.map",
-    "main.0b317bfb.js.map": "/splinterlands/static/js/main.0b317bfb.js.map",
+    "main.6ea74cc3.css.map": "/splinterlands/static/css/main.6ea74cc3.css.map",
+    "main.5b6989d8.js.map": "/splinterlands/static/js/main.5b6989d8.js.map",
     "787.de0e362b.chunk.js.map": "/splinterlands/static/js/787.de0e362b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0b317bfb.js"
+    "static/css/main.6ea74cc3.css",
+    "static/js/main.5b6989d8.js"
   ]
 }
