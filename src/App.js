@@ -7,15 +7,19 @@ import Tournaments from './components/Tournaments';
 import { ThemeProvider } from 'react-bootstrap';
 import HeaderComponent from './components/header/HeaderComponent';
 import Profile from './components/Profile';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
+
     <ThemeProvider
       breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
       minBreakpoint="xxs"
     >
+
       <div className="App">
         <HeaderComponent />
+
         <ApplicationProvider>
           <BrowserRouter>
             <Routes>

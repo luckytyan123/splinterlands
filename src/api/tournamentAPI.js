@@ -12,18 +12,8 @@ export const FetchCompletedTournaments = () => {
     })
 }
 
-// export const FetchTournamentsById = (id) => {
-//     return new Promise((resolve, reject) => {
-//         let url = `${TournamentByIdUrl}?id=${id}`;
-//         buildRequest("GET", url).then((response) => {
-//             resolve(response)
-//         })
-//             .catch(error => reject(error));
-//     })
-// }
 
 export const FetchTournamentsById = (tournaments) => {
-    console.log("gere")
     let Promises = tournaments.map(value => {
         let url = `${TournamentByIdUrl}?id=${value}`;
         return buildRequest("GET", url);

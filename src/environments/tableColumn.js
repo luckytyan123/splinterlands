@@ -20,6 +20,11 @@ export const tournamentColumns = [
         sortable: true,
     },
     {
+        name: 'Entry Fee',
+        selector: row => row.entry_fee,
+        sortable: true,
+    },
+    {
         name: 'Finish',
         selector: row => row.finish,
         sortable: true,

@@ -13,10 +13,11 @@
   }
 }
 
-
-.container{
-  width: 1280px;
-  margin: 0 auto;
+.float-right{
+  float: right;
+}
+.btn-actions button{
+  margin: 0 10px;
 }
 .App-header {
   background-color: #282c34;
